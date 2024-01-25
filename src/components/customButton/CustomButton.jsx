@@ -1,9 +1,21 @@
 import React from "react";
 import "./customButton.style.css";
 
-const CustomButton = ({ onClickHandler, text }) => {
+const CustomButton = ({
+  digits,
+  acClass,
+  percentage,
+  zeroId,
+  symbols,
+  onClickHandler,
+  text,
+}) => {
   return (
-    <button className="custom-button" onClick={onClickHandler}>
+    <button
+      id={zeroId}
+      className={`custom-button ${symbols} ${acClass} ${digits} ${percentage}`}
+      onClick={onClickHandler}
+    >
       {text}
     </button>
   );

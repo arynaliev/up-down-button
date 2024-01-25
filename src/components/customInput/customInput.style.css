@@ -1,20 +1,28 @@
 .custom-input {
+  text-align: end;
+  position: absolute;
+  top: 230px;
   padding: 5px 12px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #24292e;
+  width: 80%;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: white;
   vertical-align: middle;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: right 8px center;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
+  background-color: black;
+  border: none;
   outline: none;
-  box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+  /* background-repeat: no-repeat; */
+  /* background-position: right 8px center; */
+  /* border-radius: 6px; */
+  /* box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset; */
 }
 
 .custom-input:focus {
-  border-color: #0366d6;
-  outline: none;
-  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  caret-color: transparent;
+}
+
+.custom-input[type="number"]::-webkit-inner-spin-button,
+.custom-input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

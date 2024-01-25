@@ -16,4 +16,5 @@ export const calcTotal = (num1, num2, symbol) => {
     default:
       break;
   }
+  return total;
 };

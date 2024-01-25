@@ -1,8 +1,31 @@
 .simple-calculator {
+  position: relative;
   display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 750px;
+  margin: auto;
+  background-color: black;
+  border-radius: 1.5rem;
 }
 
-select {
+.buttons-container {
+  margin: 0 0 2rem 2rem;
+  width: 80%;
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .simple-calculator {
+    max-width: 100%;
+    min-width: 750px;
+  }
+}
+
+/* select {
   padding: 5px 12px;
   font-size: 14px;
   line-height: 20px;
@@ -21,4 +44,4 @@ select {
   border-color: #0366d6;
   outline: none;
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
-}
+} */
